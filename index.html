@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="fa" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1f1f1f">
+  <meta name="description" content="پورتفولیوی مهسا السادات موسوی‌نیا؛ طراح وب و توسعه‌دهنده فرانت‌اند جونیور.">
+  <title>مهسا موسوی‌نیا | توسعه فرانت‌اند و طراحی وب</title>
+  <script>
+    (function(){
+      try {
+        const theme = localStorage.getItem('mahsa-theme') || 'dark';
+        const lang = localStorage.getItem('mahsa-lang') || 'fa';
+        document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark';
+        document.documentElement.lang = lang === 'en' ? 'en' : 'fa';
+        document.documentElement.dir = lang === 'en' ? 'ltr' : 'rtl';
+      } catch(e) { document.documentElement.dataset.theme='dark'; }
+    })();
+  </script>
+  
+  <link rel="preload" href="assets/fonts/Vazirmatn-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body data-page="home">
+  <div class="page-load-progress" id="page-load-progress" role="progressbar" aria-label="در حال بارگذاری صفحه"></div>
+  <noscript><style>.page-load-progress {display: none!important}</style></noscript>
+  <div id="page-top" aria-hidden="true"></div>
+  <a class="skip-link" href="#main" data-i18n="skip">رفتن به محتوای اصلی</a>
+  <header class="site-header" >
+    <div class="container header-layout">
+      <a class="site-brand" href="index.html" aria-label="Mahsa Mousavinia">mahsa<span class="brand-dot">.</span></a>
+      <nav class="nav-desktop" aria-label="Main navigation">
+        <a href="#about" data-i18n="navAbout">درباره من</a>
+        <a href="#projects" data-i18n="navProjects">پروژه‌ها</a>
+        <a href="#skills" data-i18n="navSkills">مهارت‌ها</a>
+        <a href="#experience" data-i18n="navExperience">سوابق کاری</a>
+        <a href="#courses" data-i18n="navCourses">دوره‌ها</a>
+        <a href="#contact" data-i18n="navContact">ارتباط</a>
+      </nav>
+      <div class="header-controls">
+        <button type="button" class="header-button language-switch" data-language-toggle title="Change language" aria-label="Change language">EN</button>
+        <button type="button" class="header-button icon-button" data-theme-toggle title="تغییر تم" aria-label="تغییر تم">
+          <svg class="moon" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.4A8.6 8.6 0 0 1 9.6 3.5a8.6 8.6 0 1 0 10.9 10.9Z"/></svg>
+          <svg class="sun" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.1"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+        </button>
+        <button type="button" class="header-button icon-button menu-button" data-menu-toggle aria-label="باز کردن منو" aria-controls="mobile-menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-menu" id="mobile-menu" hidden aria-label="Mobile navigation">
+      <a href="#about" data-i18n="navAbout">درباره من</a>
+      <a href="#projects" data-i18n="navProjects">پروژه‌ها</a>
+      <a href="#skills" data-i18n="navSkills">مهارت‌ها</a>
+      <a href="#experience" data-i18n="navExperience">سوابق کاری</a>
+      <a href="#courses" data-i18n="navCourses">دوره‌ها</a>
+      <a href="#contact" data-i18n="navContact">ارتباط</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="overline" data-i18n="heroIntro">مهسا السادات موسوی‌نیا · کارآموز توسعه‌دهنده فرانت‌اند</p>
+          <h1 id="hero-heading" data-i18n="heroTitle">هنوز دارم یاد می‌گیرم.</h1>
+          <p class="hero-description" data-i18n="heroDescription">چند ساله با وردپرس کار می‌کنم. اینجا نمونه‌کارهام رو می‌ذارم و به‌مرور پروژه‌های فرانت‌اندی که می‌سازم رو اضافه می‌کنم.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="button button-primary"><span data-i18n="seeProjects">پروژه‌هام رو ببین</span><span aria-hidden="true">↗</span></a>
+            <a href="#contact" class="button button-link"><span data-i18n="contactAction">ارتباط با من</span><span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="hero-note" aria-hidden="true">
+          <div class="note-top"><span class="note-file">mahsa / profile</span><span class="note-symbol">✳</span></div>
+          <div class="note-content"><span class="note-monogram">M</span><span class="note-spark">✳</span></div>
+          <div class="note-bottom"><span>WEB / FRONTEND</span><span>2026</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container section-layout">
+        <h2 id="about-heading" class="section-heading" data-i18n="aboutTitle">درباره من</h2>
+        <div class="section-content body-copy">
+          <p data-i18n="aboutText1">من مهسا السادات موسوی‌نیا هستم. چند ساله با طراحی سایت، وردپرس و کارهای گرافیکی سروکار دارم. توی این مدت با نیازهای واقعی کارفرماها و کاربرهای سایت آشنا شدم.</p>
+          <p data-i18n="aboutText2">حالا تصمیم گرفتم فرانت‌اند رو جدی‌تر دنبال کنم؛ چون می‌خوام علاوه بر طراحی ظاهر سایت، پیاده‌سازی اون رو هم اصولی یاد بگیرم. اینجا کارهایی رو می‌ذارم که انجام دادم و پروژه‌هایی که در ادامه می‌سازم.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-heading">
+      <div class="container section-layout projects-layout">
+        <div class="section-head">
+          <h2 id="projects-heading" class="section-heading" data-i18n="projectsTitle">پروژه‌ها</h2>
+          
+        </div>
+        <div class="section-content">
+          <article class="project">
+            <div class="project-card-accent" aria-hidden="true"></div>
+            <div class="project-media">
+              <img class="project-image" src="assets/maps-school-1280.webp" srcset="assets/maps-school-640.webp 640w, assets/maps-school-1280.webp 1280w" sizes="(max-width: 700px) calc(100vw - 40px), (max-width: 1024px) 90vw, 800px" decoding="async" alt="نمای صفحه اصلی وب‌سایت MAPS School" loading="lazy">
+              <div class="project-fallback" role="status"><span class="fallback-mini">mapsoman.com</span><strong>MAPS School</strong><span data-i18n="projectFallback">در حال بارگذاری تصویر پروژه…</span></div>
+            </div>
+            <div class="project-details"><div class="project-meta"><span class="project-number">01</span><span class="status" data-i18n="projectStatus">در حال توسعه</span></div>
+            <h3 class="project-title">MAPS School</h3>
+            <p class="project-description" data-i18n="projectDescription">طراحی رابط کاربری و مدیریت سایت یک مدرسه خصوصی در مسقط. روی صفحات ریسپانسیو، فرم‌ها، مسیر پذیرش و شخصی‌سازی وردپرس کار کردم.</p>
+            <div class="project-stack"><span>WordPress</span><span>Elementor</span><span>HTML / CSS</span><span>UI/UX</span></div>
+            <div class="project-links"><a href="project-maps.html" class="text-link"><span data-i18n="caseLink">جزئیات پروژه</span><span aria-hidden="true">↗</span></a><a href="https://www.mapsoman.com/" target="_blank" rel="noopener noreferrer" class="text-link text-link-muted"><span data-i18n="visitLink">دیدن سایت</span><span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-heading">
+      <div class="container section-layout skills-layout">
+        <div class="section-head"><h2 id="skills-heading" class="section-heading" data-i18n="skillsTitle">ابزارهایی که باهاشون کار می‌کنم</h2></div>
+        <div class="section-content skills-list">
+          <div class="skill-group"><h3 data-i18n="skillGroupWeb">وب و فرانت‌اند</h3><div class="skill-row"><span>HTML / CSS</span><span data-i18n="intermediate">متوسط</span></div><div class="skill-row"><span>JavaScript</span><span data-i18n="beginner">مقدماتی</span></div><div class="skill-row"><span>TypeScript</span><span data-i18n="beginner">مقدماتی</span></div><div class="skill-row"><span>React</span><span data-i18n="beginner">مقدماتی</span></div><div class="skill-row"><span>WordPress</span><span data-i18n="advanced">حرفه‌ای</span></div><div class="skill-row"><span>Elementor</span><span data-i18n="advanced">حرفه‌ای</span></div></div>
+          <div class="skill-group"><h3 data-i18n="skillGroupDesign">طراحی</h3><div class="skill-row"><span>Adobe Illustrator</span><span data-i18n="intermediate">متوسط</span></div><div class="skill-row"><span>Adobe Photoshop</span><span data-i18n="intermediate">متوسط</span></div></div>
+          <div class="skill-group"><h3 data-i18n="skillGroupOther">ابزارهای دیگه</h3><div class="skill-row"><span>MATLAB</span><span data-i18n="advanced">حرفه‌ای</span></div><div class="skill-row"><span>TECPLOT</span><span data-i18n="intermediate">متوسط</span></div><div class="skill-row"><span>LaTeX</span><span data-i18n="intermediate">متوسط</span></div><div class="skill-row"><span>Fortran 90</span><span data-i18n="intermediate">متوسط</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience" aria-labelledby="experience-heading">
+      <div class="container section-layout">
+        <h2 id="experience-heading" class="section-heading" data-i18n="expTitle">سوابق کاری</h2>
+        <div class="section-content experience-list">
+          <article class="experience"><span class="experience-date" data-i18n="exp1Date">۱۴۰۴ — اکنون</span><div><h3 data-i18n="exp1Title">فریلنسر؛ طراح سایت وردپرسی و گرافیست</h3><p data-i18n="exp1Text">طراحی سایت، شخصی‌سازی صفحات وردپرس و کارهای گرافیکی.</p></div></article>
+          <article class="experience"><span class="experience-date" data-i18n="exp2Date">۱۴۰۱ — ۱۴۰۴</span><div><h3 data-i18n="exp2Title">کارشناس لکوکاپ | شرکت دانش‌بنیان لکو</h3><p data-i18n="exp2Text">کار روی سایت وردپرسی، طراحی گرافیک و هماهنگی اجرای رویدادهای دانش‌آموزی.</p></div></article>
+          <article class="experience"><span class="experience-date" data-i18n="exp3Date">۱۳۹۸ — ۱۴۰۱</span><div><h3 data-i18n="exp3Title">انجام پروژه‌های MATLAB</h3><p data-i18n="exp3Text">انجام پروژه‌های محاسباتی و نرم‌افزاری با متلب.</p></div></article>
+          <article class="experience"><span class="experience-date" data-i18n="exp4Date">۱۳۹۸ — ۱۴۰۰</span><div><h3 data-i18n="exp4Title">کارشناس بازبینی محتوا (SEO) | رایامارکتینگ</h3><p data-i18n="exp4Text">بررسی محتوا و رعایت اصول سئو در بازبینی آن.</p></div></article>
+          <article class="experience"><span class="experience-date" data-i18n="exp5Date">۱۳۹۲ — ۱۳۹۴</span><div><h3 data-i18n="exp5Title">مدیر شعبه رامسر | شرکت دانش‌بنیان لکو</h3></div></article>
+          <article class="experience"><span class="experience-date" data-i18n="exp7Date">۱۳۹۱ — ۱۳۹۳</span><div><h3 data-i18n="exp7Title">تدریس نجوم و ریاضیات</h3></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="courses" aria-labelledby="courses-heading">
+      <div class="container section-layout"><h2 id="courses-heading" class="section-heading" data-i18n="coursesTitle">دوره‌ها</h2><div class="section-content course-row"><div><h3 data-i18n="courseName">بوت‌کمپ فرانت‌اند همراه اول</h3><p data-i18n="courseText">آموزش مبانی و تمرین‌های عملی توسعه فرانت‌اند.</p></div><span class="course-tag" data-i18n="courseLabel">آموزش فرانت‌اند</span></div></div>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="container section-layout"><h2 id="contact-heading" class="section-heading" data-i18n="contactTitle">ارتباط با من</h2><div class="section-content"><p class="contact-copy" data-i18n="contactDescription">اگه درباره پروژه‌ای سؤال داری یا می‌خوای درباره همکاری صحبت کنیم، خوشحال می‌شم بهم پیام بدی.</p><div class="social-links contact-links"><a href="mailto:mahsamousavi47@gmail.com">Email ↗</a><a href="https://github.com/mahsa-mousavinia" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/mahsa-mousavinia/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></div></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-content"><span>© 2026 Mahsa Mousavinia</span><a href="#page-top" data-back-top data-i18n="backTop">برگشت به بالا ↑</a></div></footer>
+</body>
+</html>
