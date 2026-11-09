@@ -1,4 +1,3 @@
-/* Simple translations. Plain text only; no dynamic HTML insertion. */
 (() => {
   const translations = {
     en: {
@@ -85,7 +84,7 @@
     });
     document.querySelectorAll('[data-theme-toggle]').forEach(button => button.setAttribute('aria-label', lang === 'fa' ? 'تغییر تم روشن و تاریک' : 'Toggle light and dark mode'));
     document.querySelectorAll('[data-menu-toggle]').forEach(button => button.setAttribute('aria-label', lang === 'fa' ? 'باز کردن منو' : 'Open menu'));
-    document.title = page === 'project' ? (lang === 'fa' ? 'MAPS School | مهسا موسوی‌نیا' : 'MAPS School | Mahsa Mousavinia') : (lang === 'fa' ? 'مهسا موسوی‌نیا | توسعه فرانت‌اند و طراحی وب' : 'Mahsa Mousavinia | Web Design & Frontend');
+    document.title = page === 'project' ? (lang === 'fa' ? 'MAPS School | مهسا موسوی‌نیا' : 'MAPS School | Mahsa Mousavinia') : (lang === 'fa' ? 'مهسا موسوی‌نیا | کارآموز توسعه‌دهنده فرانت‌اند' : 'Mahsa Mousavinia | Front-End Developer Intern');
     save('mahsa-lang', lang);
   }
   function applyTheme(value) {
@@ -105,7 +104,7 @@
     document.addEventListener('keydown', event => { if(event.key === 'Escape') closeMenu(); });
     window.addEventListener('resize', () => { if (window.innerWidth >= 900) closeMenu(); });
   }
-  // Real screenshot: show a light placeholder while it loads, never a fabricated mockup.
+
   document.querySelectorAll('.project-media').forEach(frame => {
     const img = frame.querySelector('.project-image');
     if (!img) return;
@@ -130,8 +129,7 @@
     img.addEventListener('error', showError);
     if (img.complete) img.naturalWidth ? showImage() : showError();
   });
-  // #top on a sticky header did not always scroll. Keep the real top anchor
-  // as a no-JS fallback and scroll directly on click.
+
   document.querySelectorAll('[data-back-top]').forEach(link => {
     link.addEventListener('click', event => {
       event.preventDefault();
@@ -141,8 +139,7 @@
   });
   applyLang(lang);
   applyTheme(theme);
-  // Keep content available while downloading. This bar is only a visual hint,
-  // not a blocking overlay. The project image has its own loading placeholder.
+ 
   const progress = document.getElementById('page-load-progress');
   const finishLoading = () => {
     if (progress) {
